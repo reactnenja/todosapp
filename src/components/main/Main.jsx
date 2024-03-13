@@ -22,12 +22,9 @@ const Main = () => {
     },
   ]);
 
-  const handleInputChange = (data) => {
-    setInputData(data);
-  };
   return (
     <div>
-      <Header onInputChange={handleInputChange} />
+      <Header />
       <main className="w-full">
         <div className="container my-[140px] mx-auto px-[140px]">
           <section className="h-[600px] main__section">
@@ -49,10 +46,7 @@ const Main = () => {
                     className="p-4 rounded-md bg-[#262626] flex justify-start items-center gap-3"
                   >
                     <input type="radio" name="lists" className="radio__title" />
-                    {checked
-                      ? `<del className="text-white px-12">${item.title}</del>`
-                      : `<p className="text-white px-12">{item.title}</p>`}
-
+                    <p className="text-white px-12">{item.title}</p>
                     <div className="flex gap-2">
                       <button className="p-4 w-14  h-14 bg-slate-600 flex justify-center items-center text-2xl rounded-md">
                         <FaPen />
@@ -65,7 +59,6 @@ const Main = () => {
                 ))}
               </ul>
             </div>
-            <li className="p-4 "></li>
           </section>
         </div>
       </main>
