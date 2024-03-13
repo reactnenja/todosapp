@@ -16,7 +16,7 @@ const Header = () => {
           />
           <button className="p-4 w-32 flex justify-start items-center text-white gap-2 rounded-md bg-slate-600 hover:bg-slate-200 hover:text-blue-500 hover:transition">
             <FaPlus />
-            Adding
+            Yangi todo
           </button>
         </div>
       </nav>
